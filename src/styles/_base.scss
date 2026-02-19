@@ -1,0 +1,326 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--color-gray-300);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+
+  &:hover {
+    background-color: var(--color-gray-500);
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-gray-900);
+
+  &:hover {
+    color: var(--text-primary);
+  }
+}
+
+.title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  padding-left: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-left: 0rem;
+  }
+  &__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  &__details {
+    h1 {
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+    h2 {
+      font-size: clamp(1.25rem, 5vw, 1.5rem);
+      color: var(--color-gray-900);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: clamp(1rem, 5vw, 1.25rem);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--color-gray-800);
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: var(--color-gray-700);
+      font-weight: 500;
+    }
+  }
+  &__cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    li {
+      a {
+        font-size: 1.125rem;
+        display: inline-flex;
+        align-items: center;
+        font-weight: 700;
+        gap: 0.25rem;
+        color: var(--color-gray-900);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: var(--text-primary);
+        }
+      }
+      &:nth-child(1) {
+        a {
+          border: 1px solid var(--color-gray-500);
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem;
+
+          &:hover {
+            border-color: var(--text-primary);
+          }
+        }
+      }
+    }
+  }
+  &__contact {
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__icon {
+    font-size: 1.75rem;
+  }
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  margin-left: 100%;
+  z-index: 10;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 0;
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+.about {
+  p {
+    margin-bottom: 0.5rem;
+    font-size: clamp(1rem, 5vw, 1.125rem);
+    color: var(--text-secondary);
+  }
+}
+
+.skills {
+  &__group {
+    margin-bottom: 1rem;
+
+    &:nth-of-type(1) {
+      .skills__list {
+        li {
+          background-color: var(--color-blue-bg);
+          color: var(--color-blue-text);
+          &:hover {
+            background-color: var(--color-blue-bg-hover);
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      .skills__list {
+        li {
+          background-color: var(--color-purple-bg);
+          color: var(--color-purple-text);
+          &:hover {
+            background-color: var(--color-purple-bg-hover);
+          }
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      .skills__list {
+        li {
+          background-color: var(--color-green-bg);
+          color: var(--color-green-text);
+          &:hover {
+            background-color: var(--color-green-bg-hover);
+          }
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      .skills__list {
+        li {
+          background-color: var(--color-red-bg);
+          color: var(--color-red-text);
+          &:hover {
+            background-color: var(--color-red-bg-hover);
+          }
+        }
+      }
+    }
+    &:nth-of-type(5) {
+      .skills__list {
+        li {
+          background-color: var(--color-yellow-bg);
+          color: var(--color-yellow-text);
+          &:hover {
+            background-color: var(--color-yellow-bg-hover);
+          }
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+    margin-bottom: 0.5rem;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    li {
+      font-size: 1rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 10rem;
+      font-weight: 600;
+      transition: background-color 0.15s ease-in-out;
+      cursor: default;
+    }
+  }
+}
+
+.education {
+  &__group {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  &__logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  &__title {
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+  }
+  &__institution {
+    font-size: clamp(1.125rem, 5vw, 1.25rem);
+  }
+  &__period {
+    font-size: clamp(1rem, 5vw, 1.125rem);
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+  &__units {
+    margin-top: 1rem;
+    display: none;
+    li {
+      font-size: clamp(1rem, 5vw, 1.125rem);
+      margin-bottom: 0.5rem;
+      list-style: disc;
+    }
+    &.show {
+      display: block;
+    }
+  }
+}
+
+.projects {
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  &__image {
+    width: 100%;
+    height: max-content;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  &__title {
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  &__techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    span {
+      font-size: clamp(1rem, 5vw, 1.125rem);
+      background-color: var(--color-gray-300);
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      transition: background-color 0.15s ease-in-out;
+      cursor: default;
+      &:hover {
+        background-color: var(--color-gray-400);
+      }
+    }
+  }
+  &__achievements {
+    margin-bottom: 1rem;
+    margin-left: 1.25rem;
+    li {
+      font-size: clamp(1rem, 5vw, 1.125rem);
+      margin-bottom: 0.5rem;
+      list-style: disc;
+    }
+  }
+}
