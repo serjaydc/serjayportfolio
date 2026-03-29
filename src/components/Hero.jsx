@@ -36,7 +36,7 @@ const Hero = () => {
         </li>
         <li>
           <a
-            href="www.linkedin.com/in/serjayantsibor"
+            href="https://www.linkedin.com/in/serjayantsibor/"
             target="_blank"
             rel="noopener noreferrer"
           >
