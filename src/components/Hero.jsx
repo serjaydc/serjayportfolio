@@ -17,7 +17,11 @@ const Hero = () => {
       </div>
       <ul className="hero__cta">
         <li>
-          <a href="#">
+          <a
+            href="https://drive.google.com/file/d/1dctCDsrVpv6lUR3O6EhhQ6d8PtAKiwO1/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFileDownload className="hero__icon" /> Resume
           </a>
         </li>
@@ -31,7 +35,11 @@ const Hero = () => {
           </a>
         </li>
         <li>
-          <a href="#">
+          <a
+            href="www.linkedin.com/in/serjayantsibor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin className="hero__icon" />
           </a>
         </li>
