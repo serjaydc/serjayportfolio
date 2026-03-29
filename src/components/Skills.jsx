@@ -3,7 +3,7 @@ import React from "react";
 const SKILLS = [
   {
     title: "Frontend",
-    list: ["HTML", "CSS", "JavaScript", "Python"],
+    list: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Backend",
@@ -11,7 +11,7 @@ const SKILLS = [
   },
   {
     title: "Frameworks",
-    list: ["ReactJS", "Next.js", "SASS", "TailwindCSS"],
+    list: ["ReactJS", "SASS", "TailwindCSS"],
   },
   {
     title: "Databases",
